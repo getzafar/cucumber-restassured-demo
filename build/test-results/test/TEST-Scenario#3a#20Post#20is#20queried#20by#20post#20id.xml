@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Post is queried by post id" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:18" hostname="LAPTOP-8D7O2CVU" time="0.003">
+  <properties/>
+  <testcase name="When a post is queried by id &quot;37&quot;" classname="Scenario: Post is queried by post id" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: Post is queried by post id" time="0.0"/>
+  <testcase name="And the id of queried post is &quot;37&quot;" classname="Scenario: Post is queried by post id" time="0.0"/>
+  <testcase name="And the userid of queried post is &quot;4&quot;" classname="Scenario: Post is queried by post id" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Post is queried by post id" time="0.148"/>
+  <system-out><![CDATA[
+  Scenario: All posts are queried                      ?[90m# Post.feature:5?[0m
+    ?[32mGiven ?[0m?[32mall the posts are queried from Posts service?[0m ?[90m# PostSteps.queryAllPosts()?[0m
+    ?[32mWhen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m                 ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mThen ?[0m?[32mthere exist one or more posts?[0m                 ?[90m# PostSteps.oneOrMorePostsExist()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: A new post is created" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:18" hostname="LAPTOP-8D7O2CVU" time="0.002">
+  <properties/>
+  <testcase name="Given a new post is created" classname="Scenario: A new post is created" time="0.0"/>
+  <testcase name="Then the service response is &quot;201&quot;" classname="Scenario: A new post is created" time="0.0"/>
+  <testcase name="And the id of newly created post is &quot;101&quot;" classname="Scenario: A new post is created" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: A new post is created" time="0.681"/>
+  <system-out><![CDATA[
+  @comment
+  Scenario: All comments of a post are queried by post id               ?[90m# Post.feature:17?[0m
+    ?[32mWhen ?[0m?[32mall the comments are queried from Posts service by post id "?[0m?[32m?[1m6?[0m?[32m"?[0m ?[90m# PostSteps.queryAllCommentsPostById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m                                  ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mAnd ?[0m?[32mthere exist one or more comments for the post?[0m                   ?[90m# PostSteps.oneOrMoreCommentsExistForThePost()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

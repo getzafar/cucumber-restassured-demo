@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RunCukesTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-8D7O2CVU" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@comment
+Feature: Comment tests
+  This feature tests the Comments service
+
+  Scenario: Comments are queried by post id                                ?[90m# Comment.feature:17?[0m
+    ?[32mWhen ?[0m?[32mall the comments are queried from Comments service for postId "?[0m?[32m?[1m3?[0m?[32m"?[0m ?[90m# CommentSteps.queryCommentsByPostId(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m                                     ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mAnd ?[0m?[32mthere exist "?[0m?[32m?[1m5?[0m?[32m" comments?[0m                                           ?[90m# CommentSteps.oneOrMoreCommentsExist(int)?[0m
+@post
+Feature: Post tests
+  This feature tests the Posts service
+
+  Scenario: An existing post is deleted ?[90m# Post.feature:44?[0m
+    ?[32mGiven ?[0m?[32ma post is queried by id "?[0m?[32m?[1m37?[0m?[32m"?[0m  ?[90m# PostSteps.queryPostById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m  ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mWhen ?[0m?[32mthis post is deleted?[0m           ?[90m# PostSteps.deleteAPost()?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m  ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+@user
+Feature: User tests
+  This feature tests the Users service
+
+  Scenario: User is queried by id                  ?[90m# User.feature:10?[0m
+    ?[32mWhen ?[0m?[32ma user is queried by id "?[0m?[32m?[1m3?[0m?[32m"?[0m               ?[90m# UserSteps.queryUserById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m             ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mAnd ?[0m?[32mthe id of queried user is "?[0m?[32m?[1m3?[0m?[32m"?[0m              ?[90m# UserSteps.verifyIdOfUser(int)?[0m
+    ?[32mAnd ?[0m?[32mthe username of queried user is "?[0m?[32m?[1mSamantha?[0m?[32m"?[0m ?[90m# UserSteps.verifyUsernameOfUser(String)?[0m
+
+12 Scenarios (?[32m12 passed?[0m)
+43 Steps (?[32m43 passed?[0m)
+0m5.189s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

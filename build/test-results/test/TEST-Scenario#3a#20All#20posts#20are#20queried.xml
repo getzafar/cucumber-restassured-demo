@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: All posts are queried" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:17" hostname="LAPTOP-8D7O2CVU" time="0.003">
+  <properties/>
+  <testcase name="Given all the posts are queried from Posts service" classname="Scenario: All posts are queried" time="0.001"/>
+  <testcase name="When the service response is &quot;200&quot;" classname="Scenario: All posts are queried" time="0.0"/>
+  <testcase name="Then there exist one or more posts" classname="Scenario: All posts are queried" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: All posts are queried" time="0.171"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

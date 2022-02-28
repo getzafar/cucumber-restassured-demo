@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: An existing post is updated" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:18" hostname="LAPTOP-8D7O2CVU" time="0.687">
+  <properties/>
+  <testcase name="Given a post is queried by id &quot;37&quot;" classname="Scenario: An existing post is updated" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is updated" time="0.0"/>
+  <testcase name="When this post is updated with below details" classname="Scenario: An existing post is updated" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is updated" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: An existing post is updated" time="0.835"/>
+  <system-out><![CDATA[
+  Scenario: A new post is created             ?[90m# Post.feature:22?[0m
+    ?[32mGiven ?[0m?[32ma new post is created?[0m               ?[90m# PostSteps.createAPost(String,String>)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m201?[0m?[32m"?[0m        ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mAnd ?[0m?[32mthe id of newly created post is "?[0m?[32m?[1m101?[0m?[32m"?[0m ?[90m# PostSteps.verifyIdOfNewlyCreatedPost(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: An existing post is patched" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:19" hostname="LAPTOP-8D7O2CVU" time="0.648">
+  <properties/>
+  <testcase name="Given a post is queried by id &quot;37&quot;" classname="Scenario: An existing post is patched" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is patched" time="0.0"/>
+  <testcase name="When &quot;body&quot; of this post is patched as &quot;Patched body of existing post&quot;" classname="Scenario: An existing post is patched" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is patched" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: An existing post is patched" time="0.782"/>
+  <system-out><![CDATA[
+  Scenario: An existing post is updated          ?[90m# Post.feature:30?[0m
+    ?[32mGiven ?[0m?[32ma post is queried by id "?[0m?[32m?[1m37?[0m?[32m"?[0m           ?[90m# PostSteps.queryPostById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m           ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mWhen ?[0m?[32mthis post is updated with below details?[0m ?[90m# PostSteps.updateAnExistingPost(String,String>)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m           ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

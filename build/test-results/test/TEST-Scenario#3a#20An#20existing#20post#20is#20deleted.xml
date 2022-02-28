@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: An existing post is deleted" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:20" hostname="LAPTOP-8D7O2CVU" time="0.65">
+  <properties/>
+  <testcase name="Given a post is queried by id &quot;37&quot;" classname="Scenario: An existing post is deleted" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is deleted" time="0.0"/>
+  <testcase name="When this post is deleted" classname="Scenario: An existing post is deleted" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: An existing post is deleted" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: An existing post is deleted" time="0.793"/>
+  <system-out><![CDATA[
+  Scenario: An existing post is patched                                    ?[90m# Post.feature:38?[0m
+    ?[32mGiven ?[0m?[32ma post is queried by id "?[0m?[32m?[1m37?[0m?[32m"?[0m                                     ?[90m# PostSteps.queryPostById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m                                     ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mWhen ?[0m?[32m"?[0m?[32m?[1mbody?[0m?[32m" of this post is patched as "?[0m?[32m?[1mPatched body of existing post?[0m?[32m"?[0m ?[90m# PostSteps.patchAnExistingPost(String,String)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m                                     ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

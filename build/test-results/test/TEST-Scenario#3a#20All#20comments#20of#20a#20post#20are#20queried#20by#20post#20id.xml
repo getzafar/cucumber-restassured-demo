@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: All comments of a post are queried by post id" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-28T13:51:18" hostname="LAPTOP-8D7O2CVU" time="0.001">
+  <properties/>
+  <testcase name="When all the comments are queried from Posts service by post id &quot;6&quot;" classname="Scenario: All comments of a post are queried by post id" time="0.0"/>
+  <testcase name="Then the service response is &quot;200&quot;" classname="Scenario: All comments of a post are queried by post id" time="0.0"/>
+  <testcase name="And there exist one or more comments for the post" classname="Scenario: All comments of a post are queried by post id" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: All comments of a post are queried by post id" time="0.146"/>
+  <system-out><![CDATA[
+  Scenario: Post is queried by post id    ?[90m# Post.feature:10?[0m
+    ?[32mWhen ?[0m?[32ma post is queried by id "?[0m?[32m?[1m37?[0m?[32m"?[0m     ?[90m# PostSteps.queryPostById(int)?[0m
+    ?[32mThen ?[0m?[32mthe service response is "?[0m?[32m?[1m200?[0m?[32m"?[0m    ?[90m# CommonSteps.usersServiceResponds(int)?[0m
+    ?[32mAnd ?[0m?[32mthe id of queried post is "?[0m?[32m?[1m37?[0m?[32m"?[0m    ?[90m# PostSteps.verifyIdOfPost(int)?[0m
+    ?[32mAnd ?[0m?[32mthe userid of queried post is "?[0m?[32m?[1m4?[0m?[32m"?[0m ?[90m# PostSteps.verifyUsernameOfUser(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

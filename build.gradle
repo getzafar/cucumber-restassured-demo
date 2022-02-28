@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+    testImplementation 'com.google.code.gson:gson:2.9.0'
+    testImplementation 'info.cukes:cucumber-junit:1.2.6'
+    testImplementation 'info.cukes:cucumber-java8:1.2.5'
+    testImplementation 'info.cukes:cucumber-picocontainer:1.2.6'
+    testImplementation 'io.rest-assured:rest-assured:4.5.0'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+}
+
+group = 'com.json.placeholder'
+version = '0.0.1-SNAPSHOT'
+description = 'JsonPlaceHolderAPITest'
+sourceCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
